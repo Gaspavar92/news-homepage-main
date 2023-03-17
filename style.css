@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "Inter Regular";
+    src: url(./assets/fonts/static/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Inter Bold";
+    src: url(./assets/fonts/static/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Inter Extra Bold";
+    src: url(./assets/fonts/static/Inter-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: "Inter Variable Font";
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+html {
+    font-family: "Inter Regular";
+}
+
+.header-flex, ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    gap: 40px;
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 80%;
+}
+
+.background-image {
+    background-image: url(./assets/images/image-web-3-desktop.jpg);
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    grid-column: span 2;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.main-sections {
+    display: flex;
+    justify-content: center;
+}
+
+.left-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
