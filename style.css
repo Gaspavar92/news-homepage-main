@@ -169,6 +169,30 @@ h4 {
     display: none;
 }
 
+@media (max-width: 1030px) {
+    h1 {
+        font-size: 45px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    h5 {
+        margin-bottom: 0;
+    }
+
+    .images {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .image1, .image2, .image3 {
+        width: 70%;
+    }
+}
+
 @media (max-width: 620px) {
     .main-navbar {
         display: none;
@@ -183,13 +207,9 @@ h4 {
         width: 90%;
     }
 
-    .main-sections, .images {
+    .main-sections {
         flex-direction: column;
         justify-content: center;
-    }
-
-    .images {
-        gap: 30px
     }
 
     .left-container {
@@ -226,5 +246,20 @@ h4 {
         cursor: pointer;
         background-repeat: no-repeat;
         background-size: cover;
+    }
+
+    .sidebar-close {
+        display: inline-block;
+        background-image: url(./assets/images/icon-menu-close.svg);
+        width: 70px;
+        height: 30px;
+        display: inline-block;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .image1, .image2, .image3 {
+        width: 100%;
     }
 }
