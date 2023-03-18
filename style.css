@@ -167,6 +167,35 @@ h4 {
 
 .sidebar {
     display: none;
+    background-color: white;
+    position: fixed;
+    height: 100vh;
+    width: 50%;
+    right: 0;
+    top: 0;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.sidebar-close {
+    display: inline-block;
+    background-image: url(./assets/images/icon-menu-close.svg);
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 20px;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    gap: 25px;
+    margin-left: -10px;
 }
 
 @media (max-width: 1030px) {
@@ -237,6 +266,10 @@ h4 {
         margin-bottom: 0;
     }
 
+    .image1, .image2, .image3 {
+        width: 100%;
+    }
+
     .sidebar-icon {
         display: inline-block;
         background-image: url(./assets/images/icon-menu.svg);
@@ -246,20 +279,5 @@ h4 {
         cursor: pointer;
         background-repeat: no-repeat;
         background-size: cover;
-    }
-
-    .sidebar-close {
-        display: inline-block;
-        background-image: url(./assets/images/icon-menu-close.svg);
-        width: 70px;
-        height: 30px;
-        display: inline-block;
-        cursor: pointer;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .image1, .image2, .image3 {
-        width: 100%;
     }
 }
