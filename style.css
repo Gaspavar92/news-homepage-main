@@ -61,6 +61,7 @@ main {
 }
 
 .main-sections {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -81,17 +82,20 @@ main {
 p {
     font-size: 15px;
     color: hsl(236, 13%, 42%);
+    line-height: 25px;
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 50px;
     margin: 0;
     font-family: "Inter Bold";
+    color: hsl(240, 100%, 5%);
 }
 
 h2 {
     color: hsl(35, 77%, 62%);
     font-family: "Inter Bold";
+    font-size: 30px;
 }
 
 button {
@@ -106,12 +110,12 @@ button {
 
 .border {
     border-top: 1px solid hsl(236, 13%, 42%);
-    padding-top: 30px;
+    padding-top: 40px;
 }
 
 .right-container p {
     color: hsl(236, 13%, 42%);
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .images {
@@ -120,4 +124,41 @@ button {
 
 .image1, .image2, .image3 {
     display: flex;
+    height: 180px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.text p {
+    margin: 0 auto;
+}
+
+.image-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+h4 {
+    font-size: 40px;
+    color: hsl(233, 8%, 79%);
+}
+
+h5 {
+    font-size: 20px;
+    font-family: "Inter Bold";
+    color: hsl(240, 100%, 5%);
+}
+
+h4, h5 {
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.attribution {
+    margin-top: 50px
 }
