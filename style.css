@@ -20,6 +20,11 @@
 
 html {
     font-family: "Inter Regular";
+    transition: .5s ease;
+}
+
+* {
+    transition: inherit;
 }
 
 .header-flex, ul {
@@ -196,6 +201,23 @@ h4 {
     margin-top: 100px;
     gap: 25px;
     margin-left: -10px;
+}
+
+button:hover {
+    background-color: hsl(240, 100%, 5%);
+}
+
+a:hover, h5:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+h3, h5 {
+    cursor: pointer;
+    width: fit-content;
+}
+
+h3:hover {
+    color: hsl(35, 77%, 62%);
 }
 
 @media (max-width: 1030px) {
