@@ -74,7 +74,7 @@ main {
 }
 .right-container {
     width: 30%;
-    background-color: black;
+    background-color: hsl(240, 100%, 5%);
     color: white;
     padding: 20px;
 }
@@ -124,7 +124,7 @@ button {
 
 .image1, .image2, .image3 {
     display: flex;
-    height: 180px;
+    height: 200px;
 }
 
 .text {
@@ -152,13 +152,79 @@ h5 {
     font-size: 20px;
     font-family: "Inter Bold";
     color: hsl(240, 100%, 5%);
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
-h4, h5 {
+h4 {
     margin-bottom: 15px;
     margin-top: 0;
 }
 
 .attribution {
     margin-top: 50px
+}
+
+.sidebar {
+    display: none;
+}
+
+@media (max-width: 620px) {
+    .main-navbar {
+        display: none;
+    }
+
+    .logo img {
+        width: 55px;
+        height: 30px;
+    }
+
+    .wrapper {
+        width: 90%;
+    }
+
+    .main-sections, .images {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .images {
+        gap: 30px
+    }
+
+    .left-container {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+
+    .right-container {
+        width: fit-content;
+    }
+
+    .background-image {
+        grid-column: span 1;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    h5 {
+        margin-bottom: 0;
+    }
+
+    .sidebar-icon {
+        display: inline-block;
+        background-image: url(./assets/images/icon-menu.svg);
+        width: 70px;
+        height: 30px;
+        display: inline-block;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
