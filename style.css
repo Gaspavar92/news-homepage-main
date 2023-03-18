@@ -39,6 +39,7 @@ ul {
 
 header nav ul li a {
     text-decoration: none;
+    color: hsl(236, 13%, 42%);
 }
 
 .wrapper {
@@ -62,9 +63,61 @@ main {
 .main-sections {
     display: flex;
     justify-content: center;
+    gap: 20px;
 }
 
 .left-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    width: 70%;
+}
+.right-container {
+    width: 30%;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+p {
+    font-size: 15px;
+    color: hsl(236, 13%, 42%);
+}
+
+h1 {
+    font-size: 40px;
+    margin: 0;
+    font-family: "Inter Bold";
+}
+
+h2 {
+    color: hsl(35, 77%, 62%);
+    font-family: "Inter Bold";
+}
+
+button {
+    background-color: hsl(5, 85%, 63%);
+    border: none;
+    padding: 15px;
+    width: 50%;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 4px;
+}
+
+.border {
+    border-top: 1px solid hsl(236, 13%, 42%);
+    padding-top: 30px;
+}
+
+.right-container p {
+    color: hsl(236, 13%, 42%);
+    margin-bottom: 30px;
+}
+
+.images {
+    display: flex;
+}
+
+.image1, .image2, .image3 {
+    display: flex;
 }
